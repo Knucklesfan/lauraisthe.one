@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laura is the One.</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <script>
+            function playLaura() {
+                document.getElementById("laura_music").play();
+                document.getElementById("date").className = "laura-date"
+                document.getElementById("bg").className = "bg"
+                document.getElementById("laura").className = "laura"
+
+
+            }
+        </script>
+    </head>
+    <body>
+        <div id="bg" class="bg laura-date-hide">
+        </div>
+        <div class="lauraholder">
+            <div class="laura">
+                <img id="laura" onclick="playLaura()" class="laura clickable" src="./assets/laura.jpg" alt="Laura is the one.">
+            </img>
+            <p id="date" class="laura-date laura-date-hide">7/22/1971 - 2/24/1989</p>
+
+            </div>
+        </div>
+        <audio id="laura_music" src="assets/nightseawind.mp3" loop="loop"></audio>
+    </body>
+</html>
